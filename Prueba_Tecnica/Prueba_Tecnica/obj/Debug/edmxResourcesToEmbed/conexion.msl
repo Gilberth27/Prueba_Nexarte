@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PruebaTecnicaModelStoreContainer" CdmEntityContainer="PruebaTecnicaEntities1">
+    <EntitySetMapping Name="LOG_CONSULTA_NOM_NOMINA_DEFINITIVA">
+      <EntityTypeMapping TypeName="PruebaTecnicaModel.LOG_CONSULTA_NOM_NOMINA_DEFINITIVA">
+        <MappingFragment StoreEntitySet="LOG_CONSULTA_NOM_NOMINA_DEFINITIVA">
+          <ScalarProperty Name="ID_REGISTRO" ColumnName="ID_REGISTRO" />
+          <ScalarProperty Name="USUARIO" ColumnName="USUARIO" />
+          <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+          <ScalarProperty Name="OPERACION" ColumnName="OPERACION" />
+          <ScalarProperty Name="DESCRIPCION_DE_EVENTO" ColumnName="DESCRIPCION_DE_EVENTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NOM_CONCEPTOS_NOMINA">
+      <EntityTypeMapping TypeName="PruebaTecnicaModel.NOM_CONCEPTOS_NOMINA">
+        <MappingFragment StoreEntitySet="NOM_CONCEPTOS_NOMINA">
+          <ScalarProperty Name="ID_CONCEPTO" ColumnName="ID_CONCEPTO" />
+          <ScalarProperty Name="DESC_CONCEPTO" ColumnName="DESC_CONCEPTO" />
+          <ScalarProperty Name="COD_CONCEPTO" ColumnName="COD_CONCEPTO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NOM_EMPLEADOS">
+      <EntityTypeMapping TypeName="PruebaTecnicaModel.NOM_EMPLEADOS">
+        <MappingFragment StoreEntitySet="NOM_EMPLEADOS">
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NOM_NOMINA_DEFINITIVA">
+      <EntityTypeMapping TypeName="PruebaTecnicaModel.NOM_NOMINA_DEFINITIVA">
+        <MappingFragment StoreEntitySet="NOM_NOMINA_DEFINITIVA">
+          <ScalarProperty Name="REGISTRO" ColumnName="REGISTRO" />
+          <ScalarProperty Name="FCH_CRE" ColumnName="FCH_CRE" />
+          <ScalarProperty Name="ID_CONCEPTO" ColumnName="ID_CONCEPTO" />
+          <ScalarProperty Name="ID_EMPLEADO" ColumnName="ID_EMPLEADO" />
+          <ScalarProperty Name="VAL_NOMINA" ColumnName="VAL_NOMINA" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REG_SOLICITUDES_INGRESO">
+      <EntityTypeMapping TypeName="PruebaTecnicaModel.REG_SOLICITUDES_INGRESO">
+        <MappingFragment StoreEntitySet="REG_SOLICITUDES_INGRESO">
+          <ScalarProperty Name="ID_SOLICITUD" ColumnName="ID_SOLICITUD" />
+          <ScalarProperty Name="DOCUMENTO" ColumnName="DOCUMENTO" />
+          <ScalarProperty Name="APELLIDOS" ColumnName="APELLIDOS" />
+          <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
